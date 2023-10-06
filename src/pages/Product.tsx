@@ -29,7 +29,7 @@ const Product: FC<ProductProps> = () => {
     return <div className='w-full flex flex-col'>
         <div className="w-full flex justify-between mt-14 ml-8">
             <div className="w-full flex px-20 justify-center flex-[1]">
-                <img src={id && products[parseInt(id)].image} alt="" className=' h-full border px-10' />
+                <img src={id && products[parseInt(id)].image} alt="" className=' p-10 border h-fit w-fit border-stone-400 object-contain px-10' />
             </div>
             <div className="flex-[1] flex flex-col">
                 <p className='mb-5'>Ariel Wayz</p>

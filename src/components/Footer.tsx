@@ -9,10 +9,10 @@ interface FooterProps {
 
 const Footer: FC<FooterProps> = () => {
     return <div className='w-full bg-black flex divide-y-2 divide-gray-500 flex-col'>
-        <div className="w-full flex justify-between pl-7 pr-11 pt-10">
+        <div className="w-full flex justify-between px-20 pt-10">
             <div className="flex flex-col gap-2">
-                <h1 className='text-4xl font-extrabold ml-10 text-white'>ARIEL WAYZ</h1>
-                <i className='text-white/60 text-center max-w-sm'>Indulge in the sweetness of your favourite music by your favourite artist</i>
+                <h1 className='text-5xl font-extrabold ml-10 text-white'>ARIEL WAYZ</h1>
+                <i className='text-white/60 text-center text-xl max-w-md'>Indulge in the sweetness of your favourite music by your favourite artist</i>
             </div>
             <div className="flex flex-col items-center">
                 <h3 className='text-white font-semibold mb-4'>Join the Ariel Nation for latest news and updates</h3>
