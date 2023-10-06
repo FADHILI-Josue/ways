@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom'
 
 
 const HomePage: FC = () => {
-  return <div className='w-full flex flex-col px-32 pt-10 items-center bg-white'>
-    <div className="w-full grid grid-cols-3 gap-10">
+  return <div className='w-full flex flex-col px-7 sm:px-32 pt-10 items-center bg-white'>
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       {products.map((e, i) => <Link key={i} to={'product/'+i} className='w-full'><ProductCard name={e.name} image={e.image} price={e.price} /></Link>)}
     </div>
-    <div className="w-full grid gap-20 mt-32 mb-10 grid-cols-2">
+    <div className="w-full grid gap-20 mt-32 mb-10 grid-cols-1 md:grid-cols-2">
       {([
         { title: 'Ariel Ways Good Luck (feat Mike Kayihura) Limited Edition Single CD', image: concert, price: 3 },
         { title: 'Ariel Wayz Home Away( feat Juno Kizigenda) Digital Download ', image: concert, price: 3 },

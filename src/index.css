@@ -13,3 +13,7 @@
     padding: 0;
     margin: 0;
 }
+
+.alsoLIke::-webkit-scrollbar {
+    display: none;
+}
