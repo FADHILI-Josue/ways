@@ -1,5 +1,8 @@
 export { default as product } from './images/jumper.webp'
 export { default as concert } from './images/concert1.png'
+export { default as bag } from './images/bag.png'
+export { default as tShirt } from './images/t-shirrt.png'
+export { default as jumper } from './images/jumper1.png'
 
 
 // icons

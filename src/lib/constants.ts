@@ -1,4 +1,4 @@
-import { product } from "../assets"
+import { bag, jumper, product, tShirt } from "../assets"
 
 interface navLink {
     route: string,
@@ -33,9 +33,9 @@ export const navLinks:navLink[] = [
 
 export const products:Iproduct[] = [
    {name: 'Ariel Scribble Hoddie', image: product, price: 65.00},
-   {name: 'Ariel Scribble Hoddie', image: product, price: 65.00},
-   {name: 'Ariel Scribble Hoddie', image: product, price: 65.00},
-   {name: 'Ariel Scribble Hoddie', image: product, price: 65.00},
+   {name: 'Ariel Scribble Hoddie', image: tShirt, price: 65.00},
+   {name: 'Ariel Scribble Hoddie', image: jumper, price: 65.00},
+   {name: 'Ariel Scribble Hoddie', image: bag, price: 65.00},
    {name: 'Ariel Scribble Hoddie', image: product, price: 65.00},
    {name: 'Ariel Scribble Hoddie', image: product, price: 65.00},
 ]
