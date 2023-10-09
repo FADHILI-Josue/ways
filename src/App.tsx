@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import Footer from './components/Footer'
 import Product from './pages/Product'
 import CartPage from './pages/CartPage'
+import Success from './pages/Success'
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path='/' element={<HomePage />}/>
             <Route path='/product/:id' element={<Product />}/>
             <Route path='/cart' element={<CartPage />}/>
+            <Route path='/success' element={<Success />}/>
             <Route path="/*" element={<div className='w-screen min-h-[70vh] flex flex-col items-center justify-center text-4xl'><h1>Not Found</h1></div>} />
           </Routes>
             <Footer />

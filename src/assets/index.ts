@@ -3,6 +3,9 @@ export { default as concert } from './images/concert1.png'
 export { default as bag } from './images/bag.png'
 export { default as tShirt } from './images/t-shirrt.png'
 export { default as jumper } from './images/jumper1.png'
+export { default as wayzz } from './images/wayzz.png'
+export { default as smButterFly } from './images/sm-butt-fly.png'
+export { default as lgButterFly } from './images/lg-butt-fly.png'
 
 
 // icons
