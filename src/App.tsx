@@ -5,10 +5,11 @@ import Footer from './components/Footer'
 import Product from './pages/Product'
 import CartPage from './pages/CartPage'
 import Success from './pages/Success'
+import CheckoutPage from './pages/CheckoutPage'
 function App() {
 
   return (
-    <div className='w-screen h-screen flex bg-[#FAFAFA] flex-col overflow-x-hidden'>
+    <div className='w-screen flex bg-[#FAFAFA] flex-col overflow-x-hidden'>
          <BrowserRouter>
          <Navbar />
           <Routes>
@@ -16,6 +17,7 @@ function App() {
             <Route path='/product/:id' element={<Product />}/>
             <Route path='/cart' element={<CartPage />}/>
             <Route path='/success' element={<Success />}/>
+            <Route path='/checkout' element={<CheckoutPage />}/>
             <Route path="/*" element={<div className='w-screen min-h-[70vh] flex flex-col items-center justify-center text-4xl'><h1>Not Found</h1></div>} />
           </Routes>
             <Footer />

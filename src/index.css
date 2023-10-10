@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 
+@layer components{
+    .checkoutInput{
+        @apply w-full outline-none border-2 my-3 rounded-md p-2 border-stone-200 focus:border-stone-400
+    }
+}
+
 :root {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 * {

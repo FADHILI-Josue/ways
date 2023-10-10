@@ -6,6 +6,7 @@ export { default as jumper } from './images/jumper1.png'
 export { default as wayzz } from './images/wayzz.png'
 export { default as smButterFly } from './images/sm-butt-fly.png'
 export { default as lgButterFly } from './images/lg-butt-fly.png'
+export { default as paypal } from './images/paypayl.png'
 
 
 // icons

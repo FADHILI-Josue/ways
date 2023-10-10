@@ -40,3 +40,15 @@ export const products:Iproduct[] = [
    {name: 'Ariel Scribble Hoddie', image: product, price: 65.00},
 ]
 
+export const availableCountries:string[] = [
+   'Rwanda',
+   'Burundi',
+   'uganda'
+]
+
+export const availableCities:string[] = [
+   'Huye',
+   'Kigali',
+   'Musanze',
+   'Nyabihu'
+]
