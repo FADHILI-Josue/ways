@@ -1,22 +1,22 @@
 import { FC } from 'react'
-import { Iproduct, products } from '../lib/constants'
 import { Link } from 'react-router-dom'
 import CartProductCard from '../components/cart/CartProductCard'
 import { Button } from '../components/ui/Button'
+import { useData } from '../contexts/DataProvider'
 
 interface CartPageProps {
 
 }
 
 const CartPage: FC<CartPageProps> = () => {
-    const cartProducts: Iproduct[] = products
+    const {cartItems} = useData() 
     return <div className='w-full flex flex-col px-10 sm:px-20 items-center'>
         <div className="w-full flex items-center my-10 justify-between">
             <h1 className='text-3xl font-extrabold '>Your Cart</h1>
             <Link to={'/'} className='font-semibold underline'>Continue Shopping</Link>
         </div>
         <div className="w-full flex py-10 space-y-10 flex-col border-y-2 border-r-slate-600">
-            {cartProducts.map((e, i) => <CartProductCard key={i} image={e.image} price={e.price} title={e.name} />)}
+            {cartItems.map((e, i) => <CartProductCard key={i} image={e.image} price={e.price} title={e.name} />)}
         </div>
         <div className="w-full flex justify-between items-end mt-5">
             <h1 className="font-bold text-lg">
@@ -33,7 +33,7 @@ const CartPage: FC<CartPageProps> = () => {
         </div>
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 my-10 gap-5'>
             {
-                products.slice(0, 3).map((e, i) => <ProductCard id={products.indexOf(e)} key={i} image={e.image} name={e.name} price={e.price} />)
+                cartItems.slice(0, 3).map((e, i) => <ProductCard id={e.id} key={i} image={e.image} name={e.name} price={e.price} />)
             }
         </div>
         <Button className='rounded-none bg-black text-white mb-10'>View All</Button>
@@ -49,7 +49,7 @@ interface ProductCardProps {
     image: string;
     name: string;
     price: number;
-    id: number
+    id: string
 }
 
 
